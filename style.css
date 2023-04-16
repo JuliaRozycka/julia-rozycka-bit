@@ -1,0 +1,96 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+  overflow-x: hidden;
+  background-color: rgb(22, 1, 120);
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.details {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.main-text {
+  position: fixed;
+  line-height: 1.5;
+  z-index: 2;
+  color: aliceblue;
+  right: 10%;
+  bottom: 25%;
+  transform: translate(-20%, -40%);
+}
+
+.hi {
+    font-size: 1rem;
+}
+
+.name {
+    font-size: 3rem;
+}
+
+.opis {
+    font-size: 1rem;
+}
+
+.details {
+    min-height: 100vh;
+    display: flex;
+    margin: 1em;
+    margin-right: 10em;
+    font-size: 2rem;
+  }
+
+section {
+    color: aliceblue;
+    margin-bottom: 2em;
+}
+
+.button {
+    position: fixed;
+    z-index: 2;
+    color: #ff031c;
+    padding: 0.5%;
+    border: 2px solid #ff031c;
+    border-radius:10px;
+    font-size: 1.5rem;
+    letter-spacing:1px;
+    cursor: pointer;
+    right: 15%;
+    bottom: 20%;
+    transform: translate(-20%, -40%);
+    filter: drop-shadow(0 0 15px #ff031c) drop-shadow(0 0 50px #ff031c) contrast(2) brightness(2);
+    transition: .5s;
+  }
+  
+  .button:hover {
+    color: white;
+    background-color: #ff031c;
+    filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
+  }
+
+@media screen and (max-width: 1024px) {
+  .main-text {
+    font-size: 2rem;
+    right: 30%;
+    bottom: 25%;
+    transform: translate(50%, 50%);
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
