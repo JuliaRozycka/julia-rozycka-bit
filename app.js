@@ -61,6 +61,8 @@ gsap.fromTo(
     }
   );
 
+  
+
   gsap.fromTo(
     ".name",
     {
@@ -90,10 +92,27 @@ gsap.fromTo(
         end: "70%",
       },onComplete: () => {
         gsap.to(".button", { opacity: 0 });
+        gsap.to(".button2", { opacity: 0 });
         gsap.to(".hi", { opacity: 0 });
         gsap.to(".opis", { opacity: 0 });
         gsap.to(".name", { opacity: 0 });
       },
+    }
+  );
+
+
+  gsap.fromTo(
+    ".button2",
+    {
+      opacity: 0,
+    },
+    {
+      opacity: 1,
+      scrollTrigger: {
+        scrub: 1,
+        start: "60%",
+        end: "70%",
+      }
     }
   );
 
